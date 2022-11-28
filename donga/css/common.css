@@ -1,0 +1,236 @@
+/* 모든 페이지에 공통 들어가는 스타일 (header/footer) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+ /* font-family: 'Jua', sans-serif;  */
+html, body {
+    color: #3D3D3D;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', 'NanumGothic', 'Malgun Gothic', 'Apple SD Gothic', 'Apple SD Gothic Neo', 'Dotum', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* letter-spacing: -0.05em; */
+    word-break: keep-all; /* 단어별 줄바꿈 */
+}
+#wrap { /* id="wrap" */
+    overflow: hidden;
+    position: relative;
+    min-width: 320px;
+}
+/* 콘텐츠의 넓이를 제한하고 홈페이지를 브라우저 가운데 배치 */
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* 1400px 이하부터 320px까지 모든 사이즈 반응형 
+       1400px 일때에도 좌우에 여백은 유지해야함 
+       (1400이상에서 1400px이하로 변경되는 점 - 반응형으로 전환되는점)
+       부드럽게 여백을 유지하면서 전환
+       원래 좌우에 여백이 20px씩 들어가 있는 걸로 스타일을 줌
+       1400px이 콘텐츠 영역인데 왼쪽 20 + 오른쪽 20 = 1440px이 넓이
+       padding으로 좌우에 여백을 20px씩 줌  */
+}
+@media screen and (max-width:1000px){
+    html, body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:640px){
+    html, body {
+        font-size: 13px;
+    }
+}/* media 종료 */
+.clearfix::after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.clearfix{display:block;}
+
+/* wrapper와 동일한 사이즈를 갖은 position:relative를 요소는
+   cnt_wrap 클래스 줌 */
+.cnt_wrap {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+header .logo {
+    float: left;
+    padding-left: 50px;
+    line-height: 100px;
+}
+header .logo a {
+    display: block;
+}
+header .logo a img {
+    width: 196px;
+    height: 30px;
+}
+header .gnb {
+    float: right;
+    padding-right: 50px;
+}
+header .gnb {
+    height: 100px;
+}
+.header .gnb .depth1 {
+   display: none;
+}
+.header .gnb .gnb_open {
+    line-height: 100px;
+    color: #fff;
+}
+.header .gnb .gnb_open span {
+    font-size: 0;
+    line-height: 0;
+}
+.header .gnb .gnb_open i {
+    width: 23px;
+    height: 19px;
+    line-height: 100px;
+}
+.header .gnb .gnb_close {
+    display: none;
+}
+@media screen and (max-width:640px){
+    header {
+        height: 60px;
+    }
+    header .logo {
+        padding-left: 20px;
+        line-height: 60px;
+    }
+    header .logo a img {
+        width: 102px;
+        height: 16px;
+    }
+    header .gnb {
+        padding-right: 20px;
+    }
+    header .gnb {
+        height: 60px;
+    }
+    .header .gnb .gnb_open {
+        line-height: 60px;
+    }
+    .header .gnb .gnb_open i {
+        line-height: 60px;
+    }
+}
+
+footer {
+    margin: 100px 0 140px 0;
+    height: 400px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+footer .inner {
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner .inner2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+footer .inner .inner2 .f_logo {
+    width: 196px;
+    height: 30px;
+}
+footer .inner .inner2 .f_logo img {
+    width: 100%;
+}
+footer .inner .inner2 .f_menu {
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+}
+footer .inner .inner2 .f_menu span {
+    margin-right: 50px;
+}
+footer .inner .inner2 .f_info {
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 20px;
+}
+footer .inner .inner2 .copyright {
+    color: #777;
+    font-size: 20px;
+}
+footer .inner .inner3 {
+    display: flex;
+    flex-direction: column;
+}
+footer .inner .inner3 .family {
+    padding: 0 20px;
+    margin: 80px 0 20px 0;
+    width: 210px;
+    height: 45px;
+    border: 1px solid #777;
+    line-height: 45px;
+}
+footer .inner .inner3 .family a {
+    display: block;
+    float: left;
+}
+footer .inner .inner3 .family i {
+    float: right;
+    font-size: 23px;
+    line-height: 45px;
+}
+footer .inner .inner3 .sns ul {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px){
+    footer {
+        margin: 50px 0 80px 0;
+        height: 320px;
+    }
+    footer .inner {
+        flex-direction: column;
+    }
+    footer .inner .inner2 {
+        margin-top: 50px;
+        align-items: center;
+    }
+    footer .inner .inner2 .f_logo {
+        width: 102px;
+        height: 16px;
+    }
+    footer .inner .inner2 .f_menu {
+        margin: 20px 0 20px 0;
+        font-size: 13px;
+    }
+    footer .inner .inner2 .f_menu span {
+        margin-right: 20px;
+    }
+    footer .inner .inner2 .f_info {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    footer .inner .inner2 .copyright {
+        font-size: 13px;
+    }
+    footer .inner .inner3 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    footer .inner .inner3 .family {
+        padding: 0 10px;
+        margin: 0;
+        width: 119px;
+        height: 40px;
+        line-height: 40px;
+    }
+    footer .inner .inner3 .family i {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    footer .inner .inner3 .sns ul li {
+        margin-right: 10px;
+    }
+}
