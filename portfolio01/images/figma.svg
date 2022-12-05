@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="figma" transform="translate(-1931 -2010)">
+    <rect id="사각형_23" data-name="사각형 23" width="50" height="50" rx="10" transform="translate(1931 2010)" fill="#151a1e"/>
+    <path id="사각형_24" data-name="사각형 24" d="M5,0h6a0,0,0,0,1,0,0V10a0,0,0,0,1,0,0H5A5,5,0,0,1,0,5V5A5,5,0,0,1,5,0Z" transform="translate(1945 2019)" fill="#e7612c"/>
+    <path id="사각형_29" data-name="사각형 29" d="M5.5,0H11a0,0,0,0,1,0,0V11a0,0,0,0,1,0,0H5.5A5.5,5.5,0,0,1,0,5.5v0A5.5,5.5,0,0,1,5.5,0Z" transform="translate(1945 2029)" fill="#a65ded"/>
+    <path id="사각형_25" data-name="사각형 25" d="M0,0H7a5,5,0,0,1,5,5V5a5,5,0,0,1-5,5H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1956 2019)" fill="#e37a63"/>
+    <rect id="사각형_26" data-name="사각형 26" width="12" height="11" rx="5.5" transform="translate(1956 2029)" fill="#5cc9f2"/>
+    <path id="합치기_1" data-name="합치기 1" d="M0,5.5A5.5,5.5,0,0,1,4.333.124V0H11V5.333h0c0,.055,0,.111,0,.167a5.5,5.5,0,0,1-11,0Z" transform="translate(1945 2040)" fill="#65df84"/>
+  </g>
+</svg>
