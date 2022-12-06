@@ -12,11 +12,309 @@
 }
 
 .information {
-    margin-top: 77px;
+    margin: 80px 0 150px 0;
 }
 .information h2 {
+    position: relative;
     float: right;
     color: #37438D;
     font-family: 'Jua', sans-serif;
     font-size: 80px;
+}
+.information h2::after {
+    position: absolute;
+    left: 0;
+    top: 115px;
+    width: 660px;
+    height: 3px;
+    background-color: #37438D;
+    content: "";
+}
+.information strong {
+    display: block;
+    padding: 210px 0 30px 0;
+    color: #37438D;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+}
+.information .inner {
+    display: flex;
+    justify-content: space-between;
+}
+.information .inner .introduce {
+    margin-right: 50px;
+}
+.information .inner .introduce  img {
+    width: 350px;
+    height: 350px;
+    border-radius: 190px;
+}
+.information .inner .introduce  span {
+    display: block;
+    padding: 30px 0 20px 0;
+    color: #37438D;
+    font-size: 25px;
+    text-align: center;
+}
+.information .inner .introduce  p {
+    padding-bottom: 10px;
+    color: #37438D;
+    font-size: 20px;
+    text-align: center;
+}
+.information .inner .education {
+    margin-right: 50px;
+}
+.information .inner .education span {
+    display: block;
+    padding: 92px 0 51px 0;
+    color: #37438D;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+.information .inner .education p {
+    padding-bottom: 20px;
+    width: 300px;
+    color: #37438D;
+    font-size: 20px;
+}
+.information .inner .cretification span {
+    display: block;
+    padding: 92px 0 51px 0;
+    color: #37438D;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+.information .inner .cretification p {
+    padding-bottom: 20px;
+    width: 300px;
+    color: #37438D;
+    font-size: 20px;
+}
+.information .inner .skil span {
+    display: block;
+    padding: 92px 0 51px 0;
+    color: #37438D;
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+}
+.information .inner .skil ul {
+    width: 260px;
+}
+.information .inner .skil ul li {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.site01 .bg {
+    background: url(../images/site01_bg.png)no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+}
+.site01 .bg .inner {
+    display: flex;
+}
+.site01 .bg .inner .contents .tit {
+    padding-top: 121px;
+}
+.site01 .bg .inner .contents .tit span {
+    font-family: 'BMYEONSUNG';
+    font-size: 30px;
+}
+.site01 .bg .inner .contents .tit h2 {
+    position: relative;
+    font-family: 'BMYEONSUNG';
+    font-size: 50px;
+}
+.site01 .bg .inner .contents .tit h2::after {
+    position: absolute;
+    left: -250px;
+    top: 60px;
+    width: 500px;
+    height: 3px;
+    background-color: #FFF;
+    content: "";
+}
+.site01 .bg .inner .contents .txt {
+    padding-top: 168px;
+}
+.site01 .bg .inner .contents .txt span {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site01 .bg .inner .contents .txt p {
+    margin-top: 10px;
+    width: 520px;
+}
+.site01 .bg .inner .contents .about {
+    padding-top: 80px;
+}
+.site01 .bg .inner .contents .about h3 {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site01 .bg .inner .contents .about span {
+    display: block;
+    margin: 10px 0;
+}
+.site01 .bg .inner .img {
+    position: relative;
+}
+/* .site01 .bg .inner .img span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(15deg);
+} */
+.site01 .bg .inner .img .laptop {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.site01 .bg .inner .img .mobile {
+    position: absolute;
+    left: 200px;
+    bottom: -130px;
+}
+
+.site02 {
+    position: relative;
+}
+.site02 .bg {
+    background: url(../images/site02_bg.png)no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+}
+.site02 .bg .tit {
+    padding-top: 121px;
+}
+.site02 .bg .tit span {
+    font-family: 'BMYEONSUNG';
+    font-size: 30px;
+}
+.site02 .bg .tit h2 {
+    position: relative;
+    font-family: 'BMYEONSUNG';
+    font-size: 50px;
+}
+.site02 .bg .tit h2::after {
+    position: absolute;
+    left: -250px;
+    top: 60px;
+    width: 560px;
+    height: 3px;
+    background-color: #FFF;
+    content: "";
+}
+.site02 .bg .txt {
+    padding-top: 168px;
+}
+.site02 .bg .txt span {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site02 .bg .txt p {
+    margin-top: 10px;
+    width: 520px;
+}
+.site02 .bg .about {
+    float: right;
+    padding-top: 150px;
+    color: #3D3D3D;
+}
+.site02 .bg .about h3 {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site02 .bg .about h3 strong {
+    color: #F36608;
+}
+.site02 .bg .about span {
+    display: block;
+    margin: 10px 0;
+}
+.site02 .bg .pic ul {
+    position: absolute;
+    right: 400px;
+    top: 120px;
+}
+.site02 .bg .pic ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.site03 .bg {
+    background: url(../images/site03_bg.png)no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    color: #777777;
+}
+.site03 .bg .inner {
+    display: flex;
+}
+.site03 .bg .inner .contents .tit {
+    padding-top: 121px;
+}
+.site03 .bg .inner .contents .tit span {
+    font-family: 'BMYEONSUNG';
+    font-size: 30px;
+}
+.site03 .bg .inner .contents .tit h2 {
+    position: relative;
+    font-family: 'BMYEONSUNG';
+    font-size: 50px;
+}
+.site03 .bg .inner .contents .tit h2::after {
+    position: absolute;
+    left: -250px;
+    top: 60px;
+    width: 430px;
+    height: 3px;
+    background-color: rgba(0,0,0,0.1);
+    content: "";
+}
+.site03 .bg .inner .contents .txt {
+    padding-top: 168px;
+}
+.site03 .bg .inner .contents .txt span {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site03 .bg .inner .contents .txt span strong {
+    color: #00ABCD;
+}
+.site03 .bg .inner .contents .txt p {
+    margin-top: 10px;
+    width: 520px;
+}
+.site03 .bg .inner .contents .about {
+    padding-top: 80px;
+}
+.site03 .bg .inner .contents .about h3 {
+    font-family: 'BMYEONSUNG';
+    font-size: 25px;
+}
+.site03 .bg .inner .contents .about h3 strong {
+    color: #00ABCD;
+}
+.site03 .bg .inner .contents .about span {
+    display: block;
+    margin: 10px 0;
+}
+.site03 .bg .inner .img {
+    position: relative;
+}
+.site03 .bg .inner .img .laptop {
+    position: absolute;
+    left: 0;
+    top: 323px;
+}
+
+.end .bg {
+    background: url(../images/end_bg.png)no-repeat center center /cover;
+    width: 100%;
+    height: 100vh;
 }
