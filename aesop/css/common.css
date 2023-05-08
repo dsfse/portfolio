@@ -52,3 +52,164 @@ html, body {
 .cnt_wrap {
     position: relative;
 }
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,254,242,1);
+    color: #fff;
+}
+.header .logo {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: 100;
+    height: 100px;
+}
+.header .logo a {
+    display: block;
+    margin-top: 33px;
+    width: 111px;
+    height: 34px;
+    background-image: url(../images/common/aesop_logo_w.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    font-size: 0;
+    line-height: 0;
+}
+.header .gnb {
+    position: relative;
+    height: 100px;
+}
+.header .gnb .gnb_open {
+    display: none;
+}
+.header .gnb .gnb_wrap ul {
+    display: flex;
+    justify-content: center;
+}
+.header .gnb .gnb_wrap ul li a {
+    display: block;
+    padding: 0 25px;
+    font-size: 15px;
+    line-height: 100px;
+}
+.header .gnb .gnb_util {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+.header .gnb .gnb_util ul {
+    display: flex;
+}
+.header .gnb .gnb_util ul li {
+    margin-right: 30px;
+}
+.header .gnb .gnb_util ul li:last-child {
+    margin-right: 0;
+}
+.header .gnb .gnb_util ul li button span {
+    font-size: 0;
+    line-height: 0;
+}
+
+@media screen and (max-width:1500px){
+    .header .logo {
+        left: 40px;
+    }
+    .header .gnb .gnb_wrap ul li a {
+        padding: 0 20px;
+    }
+    .header .gnb .gnb_util {
+        right: 40px;
+    }
+    .header .gnb .gnb_util ul li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .header {
+        height: 80px;
+    }
+    .header .logo {
+        left: 30px;
+        height: 80px;
+    }
+    .header .logo a {
+        margin-top: 30px;
+        width: 85px;
+        height: 26px;
+    }
+    .header .gnb {
+        height: 80px;
+    }
+    .header .gnb .gnb_wrap ul {
+        display: none;
+    }
+    .header .gnb .gnb_open {
+        display: block;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+    .header .gnb .gnb_open strong {
+        display: none;
+    }
+    .header .gnb .gnb_util {
+        display: none;
+    }
+    .header .gnb .gnb_open span {
+        position: absolute;
+        right: 30px;
+        width: 13px;
+        height: 1px;
+        background-color: #FFF;
+        transition: 0.3s;
+    }
+    .header.fixed .gnb .gnb_open span {
+        position: absolute;
+        right: 20px;
+        width: 13px;
+        height: 1px;
+        background-color: #3D3D3D;
+        transition: 0.3s;
+    }
+    .header .gnb .gnb_open span.line1 { /*  span.line1  */
+        top: 0;
+    }
+    .header .gnb .gnb_open span.line2 {
+        top: 6px;
+        width: 9px;
+    }
+    .header .gnb .gnb_open span.line3 {
+        top: 12px;
+    }
+}
+@media screen and (max-width:640px){
+    .header {
+        height: 60px;
+    }
+    .header .logo {
+        left: 20px;
+        height: 60px;
+    }
+    .header .logo a {
+        margin-top: 20px;
+        width: 61px;
+        height: 20px;
+    }
+    .header .gnb {
+        height: 60px;
+    }
+    .header .gnb .gnb_open {
+        top: 22px;
+    }
+}
+
