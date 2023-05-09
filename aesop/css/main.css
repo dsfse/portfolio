@@ -202,6 +202,7 @@
 }
 
 .sub_pdt01 {
+    position: relative;
     background-color: #ECE3D3;
     padding-bottom: 200px;
 }
@@ -226,6 +227,9 @@
 }
 
 .sub_pdt01 .inner .tit .btn {
+    position: absolute;
+    left: 120px;
+    top: 450px;
     width: 100px;
     height: 30px;
     line-height: 30px;
@@ -237,6 +241,7 @@
 }
 .sub_pdt01 .inner .perfume .list li {
     margin-right: 40px;
+    width: 360px;
     text-align: center;
 }
 .sub_pdt01 .inner .perfume .list li:last-child {
@@ -247,7 +252,6 @@
 }
 .sub_pdt01 .inner .perfume .list li a img {
     width: 100%;
-    height: 100%;
 }
 .sub_pdt01 .inner .perfume .list li span {
     display: block;
@@ -257,47 +261,5 @@
 }
 
 @media screen and (max-width:640px){
-    .sub_pdt01 {
-    padding-bottom: 50px;
-    }
-    .sub_pdt01 .inner {
-        display: block;
-        padding: 50px 20px 0 20px;
-    }
-    .sub_pdt01 .inner .tit {
-        width: auto;
-    }
-    .sub_pdt01 .inner .tit h2 {
-        margin: 10px 0;
-        font-size: 25px;
-    }
-    .sub_pdt01 .inner .tit p {
-        font-size: 13px;
-        margin-bottom: 20px;
-    }
-    .sub_pdt01 .inner .tit .btn {
-        width: 65px;
-        height: 20px;
-        line-height: 20px;
-    }
-    .sub_pdt01 .inner .perfume .list {
-        display: flex;
-        margin-top: 20px;
-    }
-    .sub_pdt01 .inner .perfume .list li {
-        margin-right: 40px;
-        text-align: center;
-    }
-    .sub_pdt01 .inner .perfume .list li:last-child {
-        margin-right: 0;
-    }
-    .sub_pdt01 .inner .perfume .list li a {
-        display: block;
-    }
-    .sub_pdt01 .inner .perfume .list li span {
-        display: block;
-        margin: 20px 0;
-        font-size: 20px;
-        font-weight: 700;
-    }
+  
 }
