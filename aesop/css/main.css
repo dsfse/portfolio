@@ -241,7 +241,6 @@
 }
 .sub_pdt01 .inner .perfume .list li {
     margin-right: 40px;
-    width: 360px;
     text-align: center;
 }
 .sub_pdt01 .inner .perfume .list li:last-child {
@@ -252,6 +251,7 @@
 }
 .sub_pdt01 .inner .perfume .list li a img {
     width: 100%;
+    height: 100%;
 }
 .sub_pdt01 .inner .perfume .list li span {
     display: block;
@@ -261,5 +261,39 @@
 }
 
 @media screen and (max-width:640px){
-  
+    .sub_pdt01 .inner {
+        display: block;
+        padding: 50px 20px 0 20px;
+    }
+    .sub_pdt01 .inner .tit {
+        width: auto;
+    }
+    .sub_pdt01 .inner .tit h2 {
+        margin: 10px 0;
+        font-size: 25px;
+    }
+    .sub_pdt01 .inner .tit p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .sub_pdt01 .inner .tit .btn {
+        left: 0;
+        top: 0;
+        width: 65px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .sub_pdt01 .inner .perfume .list li {
+        margin-right: 20px;
+        width: auto;
+        height: auto;
+    }
+    .sub_pdt01 .inner .perfume .list li a img {
+        width: 100%;
+        height: 100%;
+    }
+    .sub_pdt01 .inner .perfume .list li span {
+        margin: 10px 0;
+        font-size: 13px;
+    }
 }
