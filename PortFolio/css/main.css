@@ -14,6 +14,31 @@
     text-align: center;
 }
 
+@media screen and (max-width:1440px){
+    .header {
+        width: auto;
+        height: auto;
+    }
+    .header h1 {
+        padding: 25px 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .header h1 {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .header h1 {
+        padding: 15px 0;
+        font-size: 15px;
+    }
+}
+
 .visual {
     margin: 50px 0 150px 0; 
 }
@@ -30,8 +55,35 @@
     line-height: 0;
 }
 
+@media screen and (max-width:1000px){
+    .visual {
+        margin: 40px 0 100px 0; 
+    }
+}
+
+@media screen and (max-width:1000px){
+    .visual {
+        margin: 40px 0 80px 0; 
+    }
+    .visual .bg {
+        width: auto;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .visual {
+        margin: 30px 0 30px 0; 
+    }
+    .visual .bg {
+        height: 154px;
+    }
+}
+
 .information {
     width: 100%;
+    padding-bottom: 150px;
+    border-bottom: 1px solid rgba(161,168,212,0.3);
 }
 .information .total {
     display: flex;
@@ -52,6 +104,10 @@
 }
 .information .total .inner01 .left p {
     width: 650px;
+    height: 231px;
+}
+.information .total .inner01 .left img {
+    width: 100%;
 }
 .information .total .inner01 .right {
     padding-right: 112px;
@@ -60,7 +116,6 @@
     display: block;
     color: #37438D;
     font-size: 30px;
-    line-height: 50px;
     text-align: center;
 }
 .information .total .inner01 .right span strong {
@@ -111,7 +166,6 @@
 }
 .information .total .inner02 .left .skill {
     display: flex;
-    margin-bottom: 100px;
 }
 .information .total .inner02 .left .skill h2 {
     margin-right: 60px;
@@ -156,5 +210,429 @@
 .information .total .inner02 .right .edu_car .txt p {
     margin-bottom: 20px;
     font-size: 20px;
-    line-height: 30px;
+}
+@media screen and (max-width:1440px){
+    .information .total .inner02 .left .profile h2 {
+        margin-right: 30px;
+    } 
+    .information .total .inner02 .left .certification h2 {
+        margin-right: 30px;
+    }
+    .information .total .inner02 .left .skill h2 {
+        margin-right: 30px;
+    }
+    .information .total .inner02 .right {
+        margin-left: 30px;
+    }
+    .information .total .inner02 .right .edu_car h2 {
+        margin: 205px 30px 0 0;
+    }
+}
+@media screen and (max-width:1300px){
+    .information .total .inner02 .left .profile h2 {
+        margin-right: 10px;
+    } 
+    .information .total .inner02 .left .certification h2 {
+        margin-right: 10px;
+    }
+    .information .total .inner02 .left .skill h2 {
+        margin-right: 10px;
+    }
+    .information .total .inner02 .right {
+        margin-left: 10px;
+    }
+    .information .total .inner02 .right .edu_car h2 {
+        margin: 205px 10px 0 0;
+    }
+}
+@media screen and (max-width:1250px){
+    .information {
+        width: auto;
+        padding-bottom: 100px;
+    }
+    .information .total {
+        display: block;
+    }
+    .information .total .inner01 {
+        display: block;
+    }
+    .information .total .inner01 .left p {
+        width: auto;
+        height: auto;
+    }
+    .information .total .inner01 .right {
+        padding-right: 0;
+        padding-top: 70px;
+    }
+    .information .total .inner01 .right span {
+        text-align: center;
+    }
+    .information .total .inner02 {
+        display: block;
+        margin-top: 50px;
+    }
+    .information .total .inner02 .left .profile {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .information .total .inner02 .left .profile h2 {
+        margin-right: 0;
+        width: auto;
+        text-align: center;
+    }
+    .information .total .inner02 .left .profile .txt p {
+        margin-top: 20px;
+        width: auto;
+        text-align: center;
+    }
+    .information .total .inner02 .left .certification {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .information .total .inner02 .left .certification h2 {
+        margin-right: 0;
+        width: auto;
+        text-align: center;
+    }
+    .information .total .inner02 .left .certification .txt p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .information .total .inner02 .left .skill {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .information .total .inner02 .left .skill h2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: auto;
+        text-align: center;
+    }
+    .information .total .inner02 .left .skill .txt {
+        width: auto;
+    }
+    .information .total .inner02 .left .skill .txt ul {
+        display: flex;
+        justify-content: center;
+    }
+    .information .total .inner02 .left .skill .txt ul li:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .information .total .inner02 .right {
+        margin-left: 0;
+    }
+    .information .total .inner02 .right .edu_car {
+        display: block;
+    }
+    .information .total .inner02 .right .edu_car h2 {
+        margin: 30px 0 30px 0;
+        width: auto;
+    }
+    .information .total .inner02 .right .edu_car .txt {
+        width: auto;
+    }
+    .information .total .inner02 .right .edu_car .txt p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px){
+    .information {
+        padding-bottom: 30px;
+    }
+    .information .total .inner01 .left h2 {
+        font-size: 80px;
+    }
+    .information .total .inner01 .right {
+        padding-top: 30px;
+    }
+    .information .total .inner01 .right span {
+        font-size: 20px;
+    }
+    .information .total .inner01 .right span strong {
+        font-size: 30px;
+    }
+    .information .total .inner02 {
+        margin-top: 30px;
+    }
+    .information .total .inner02 .left .profile {
+        margin-bottom: 30px;
+    }
+    .information .total .inner02 .left .profile h2 {
+        font-size: 20px;
+    }
+    .information .total .inner02 .left .profile .txt p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .information .total .inner02 .left .certification {
+        margin-bottom: 30px;
+    }
+    .information .total .inner02 .left .certification h2 {
+        font-size: 20px;
+    }
+    .information .total .inner02 .left .certification .txt p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .information .total .inner02 .left .skill {
+        margin-bottom: 20px;
+    }
+    .information .total .inner02 .left .skill h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .information .total .inner02 .left .skill .txt ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .information .total .inner02 .right .edu_car h2 {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+    }
+    .information .total .inner02 .right .edu_car .txt p {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:550px){
+    .information .total .inner01 .left h2 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .information .total .inner01 .left h2 {
+        bottom: 30px;
+        font-size: 50px;
+    }
+}
+
+.w_site {
+    padding: 80px 0 150px 0;
+}
+.w_site h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #37438D;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.w_site .list {
+    width: 100%;
+}
+.w_site .list ul li {
+    float: left;
+    margin-right: 40px;
+    width: 440px;
+}
+.w_site .list ul li:last-child {
+    margin-right: 0;
+}
+.w_site .list ul li a {
+    display: block;
+}
+.w_site .list ul li a img {
+    width: 100%;
+}
+.w_site .list ul li .tit {
+    margin-bottom: 50px;
+}
+.w_site .list ul li .tit strong {
+    display: block;
+    margin: 50px 0 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #37438D;
+}
+.w_site .list ul li .tit p {
+    display: block;
+}
+.w_site .list ul li .tit_about strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #37438D;
+}
+.w_site .list ul li .tit_about .dma {
+    display: block;
+    color: #C10B12;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.w_site .list ul li .tit_about .donga {
+    display: block;
+    color: #00ABCD;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.w_site .list ul li .tit_about .camp {
+    display: block;
+    color: #F36608;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.w_site .list ul li .tit_about p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:1000px){
+    .w_site {
+        padding: 65px 0 1200px 0;
+    }
+    .w_site h2 {
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .w_site {
+        padding: 50px 0 100px 0;
+    }
+    .w_site h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .w_site .list ul li {
+        margin-right: 30px;
+        width: auto;
+    }
+    .w_site .list ul li .tit {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .w_site .list ul li .tit strong {
+        margin: 20px 0 20px 0;
+        font-size: 21px;
+    }
+    .w_site .list ul li .tit p {
+        display: block;
+        line-height: 1.5;
+        height: 4.5em;
+        overflow: hidden;
+    }
+    .w_site .list ul li .tit_about strong {
+        display: block;
+        margin: 0 0 10px 0;
+        font-size: 21px;
+    }
+    .w_site .list ul li .tit_about .dma {
+        font-size: 15px;
+    }
+    .w_site .list ul li .tit_about .donga {
+        font-size: 15px;
+    }
+    .w_site .list ul li .tit_about .camp {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:640px){
+    .w_site {
+        padding: 30px 0 50px 0;
+    }
+    .w_site h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .w_site .list ul li {
+        margin-right: 20px;
+    }
+    .w_site .list ul li .tit {
+        margin-bottom: 20px;
+    }
+    .w_site .list ul li .tit strong {
+        font-size: 18px;
+    }
+    .w_site .list ul li .tit p {
+        height: 3em;
+    }
+    .w_site .list ul li .tit_about strong {
+        font-size: 18px;
+    }
+   
+}
+
+.designs {
+    padding: 80px 0 150px 0;
+}
+.designs h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #37438D;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.designs .w_design strong {
+    display: block;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37438D;
+} 
+.designs .w_design .list {
+    width: 100%;
+}
+.designs .w_design .list ul {
+    width: 1440px;
+}
+.designs .w_design .list ul li {
+    float: left;
+}
+.designs .w_banner {
+    width: 100%;
+}
+.designs .w_banner strong {
+    display: block;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37438D;
+}
+.designs .w_banner .banner_list ul {
+    display: flex;
+    flex-direction: column;
+}
+.designs .w_banner .banner_list ul li {
+    margin-bottom: 40px;
+}
+.designs .w_banner .banner_list ul li img {
+    width: 100%;
+}
+
+.designs .sns {
+    padding-top: 110px;
+    width: 100%;
+}
+.designs .sns strong {
+    display: block;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37438D;
+}
+.designs .sns .sns_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.designs .sns .sns_list ul li {
+    margin-bottom: 40px;
+}
+.footer {
+    background-color: #37438D;
+    height: 300px;
+}
+.footer span {
+    display: block;
+    padding-top: 130px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
 }
