@@ -31,10 +31,7 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            360: {  /* 640px 이상이 되면 적용 */
-                slidesPerView: 1,
-                spaceBetween: 20, 
-            },
+            
             640: {  /* 640px 이상이 되면 적용 */
                 slidesPerView: 2,
                 spaceBetween: 30, 
